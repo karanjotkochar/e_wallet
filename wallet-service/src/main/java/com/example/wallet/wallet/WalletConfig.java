@@ -18,6 +18,7 @@ public class WalletConfig {
 
     @Bean
     ObjectMapper getObjectMapper(){
+
         return new ObjectMapper();
     }
 
@@ -40,6 +41,7 @@ public class WalletConfig {
 
     @Bean
     ConsumerFactory getConsumerFactory(){
+
         return new DefaultKafkaConsumerFactory(getCProperties());
     }
 
